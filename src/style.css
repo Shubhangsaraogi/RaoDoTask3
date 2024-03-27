@@ -1,0 +1,76 @@
+*{
+  font-family:'inter';
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 13px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .title h3{
+    font-weight: bold;
+    color: gray;
+    margin: 8px 0;
+  }
+  .number{
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .title{
+    padding: 12px 23px;
+  }
+  .card-footer{
+    display: flex;
+    gap: 9px;
+    height: 29%;
+    align-items: end;
+    font-size: 15px;
+    padding: 0 19px;
+  }
+  .green-chip{
+    font-weight: bold;
+    font-size: 14px;
+    background: #dcfff5;
+    border-radius: 12px;
+    width: 50px;
+    color: #38d0a3;
+    text-align: center;
+  }
+  .grey-text{
+    font-size: 13px;
+    color: #9d9fa2;
+    font-weight: bold;
+  }
+  .red-chip{
+    background: #ffe0e3;
+    color: #df4553;
+  }
+  .grey-chip{
+    background: #f2f4f7;
+    color: #656f85;
+  }
+  .sidebar-heading{
+    /* z-index: 2; */
+    font-size: 14px;
+  }
+  .dropdown{
+    font-size: 12px;
+    color: #5f6980;
+    cursor: pointer;
+  }
+  .dropdown:hover{
+    font-weight: bold;
+  }
+  .sidebar-heading:hover{
+    font-weight: bold;
+  }
