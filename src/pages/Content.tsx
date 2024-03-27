@@ -41,13 +41,9 @@ const Content: FunctionComponent = () => {
         </div>
 
         {/* Sidebar other menu items */}
-        <div className="sidebar-menu">
+        {/* <div className="sidebar-menu">
 
-          <img
-            className="absolute h-[3.01%] w-[16.11%] top-[18.95%] right-[83.89%] bottom-[78.04%] left-[0%] max-w-full overflow-hidden max-h-full z-[3]"
-            alt=""
-            src="/vector-7.svg"
-          />
+          
           <img
             className="absolute h-[3.01%] w-[16.11%] top-[21.96%] right-[83.89%] bottom-[75.03%] left-[0%] max-w-full overflow-hidden max-h-full z-[4]"
             alt=""
@@ -68,7 +64,7 @@ const Content: FunctionComponent = () => {
             alt=""
             src="/vector-7.svg"
           />
-        </div>
+        </div> */}
 
         <img
           className="absolute h-[1.27%] w-[1.22%] top-[1.65%] right-[11.3%] bottom-[97.07%] left-[87.49%] max-w-full overflow-hidden max-h-full z-[4]"
@@ -78,16 +74,12 @@ const Content: FunctionComponent = () => {
 
         <div className="unlock-premium">
 
-        <img
-          className="absolute h-[8.37%] w-[79.44%] top-[6.41%] right-[2.22%] bottom-[85.23%] left-[18.33%] max-w-full overflow-hidden max-h-full"
-          alt=""
-          src="/vector-13.svg"
-        />
-        <img
-          className="absolute h-[3.01%] w-[9.93%] top-[9.08%] right-[4.72%] bottom-[87.91%] left-[85.35%] max-w-full overflow-hidden max-h-full z-[1]"
-          alt=""
-          src="/vector-14.svg"
-        />
+        <div
+          className="background-premium-stats absolute h-[8.37%] w-[79.44%] top-[6.41%] right-[2.22%] bottom-[85.23%] left-[18.33%] max-w-full overflow-hidden max-h-full"
+        ></div>
+        <div
+          className="rounded-[30px] absolute bg-white h-[3.01%] w-[9.93%] top-[9.08%] right-[4.72%] bottom-[87.91%] left-[85.35%] max-w-full overflow-hidden max-h-full z-[1]"
+        ></div>
         </div>
 
         <header className="absolute top-[0px] left-[20px] w-[1420px] flex flex-row items-end justify-between gap-[20px] max-w-full">
@@ -203,36 +195,29 @@ const Content: FunctionComponent = () => {
                 src="/vector-30.svg"
               />
             </div>
-            <div className="w-[1180.7px] h-[55.3px] flex flex-row items-start justify-start py-0 pr-[69px] pl-[68.79999999999995px] box-border max-w-full">
+            <div className="w-[1180.7px] h-[55.3px] flex flex-row items-start justify-start py-0 pr-[69px] pl-[68.8px] box-border max-w-full">
               <div className="self-stretch flex-1 flex flex-row items-start justify-between max-w-full gap-[20px]">
-                <div className="self-stretch w-[283.6px] flex flex-col items-start justify-start gap-[14.499999999999886px]">
-                  <div className="h-[27.1px] flex flex-row items-start justify-start py-0 pr-0.5 pl-[1.2000000000000457px] box-border">
-                    <img
-                      className="h-[27.1px] w-[280.4px] relative z-[1]"
-                      alt=""
-                      src="/vector-31.svg"
-                    />
+                <div className="self-stretch w-[283.6px] flex flex-col items-start justify-start gap-[14.5px]">
+                  <div className="h-[27.1px] flex flex-row items-start justify-start py-0 pr-0.5 pl-[1.2px] box-border">
+                    <div
+                      className="premium-stats h-[27.1px] w-[280.4px] relative z-[1]"
+                    >Unlock Premium Stats</div>
                   </div>
-                  <img
-                    className="self-stretch h-[13.7px] relative max-w-full overflow-hidden shrink-0 z-[1]"
-                    alt=""
-                    src="/vector-32.svg"
-                  />
+                  <div
+                    className="premium-stats-desc self-stretch h-[13.7px] relative max-w-full overflow-hidden shrink-0 z-[1]"
+                  >Get upto 10TB of storage for a limited time
+                  </div>
                 </div>
-                <div className="w-[83.7px] flex flex-col items-start justify-start pt-[18.799999999999955px] px-0 pb-0 box-border">
+                <div className="w-[83.7px] flex flex-col items-start justify-start pt-[18.8px] px-0 pb-0 box-border">
                   <div className="self-stretch h-[17px] flex flex-row items-start justify-start gap-[9.600000000000025px]">
                     <img
                       className="h-[15px] w-[11.7px] relative shrink-0 [debug_commit:f6aba90] z-[2]"
                       alt=""
                       src="/vector-33.svg"
                     />
-                    <div className="h-[17px] flex-1 flex flex-col items-start justify-start pt-[1.8999999999999773px] px-0 pb-0 box-border">
-                      <img
-                        className="self-stretch h-[15.1px] relative max-w-full overflow-hidden shrink-0 [debug_commit:f6aba90] z-[2]"
-                        alt=""
-                        src="/vector-34.svg"
-                      />
-                    </div>
+                      <div
+                      className="self-stretch font-bold h-[20.1px] relative max-w-full overflow-hidden shrink-0 [debug_commit:f6aba90] z-[2]"
+                      >Upgrade</div>
                   </div>
                 </div>
               </div>
@@ -240,20 +225,20 @@ const Content: FunctionComponent = () => {
           </div>
         </header>
         <section className="absolute top-[258px] left-[20.9px] flex flex-row items-start justify-start gap-[32px] mq1325:flex-wrap">
-          <div className="h-[216.2px] w-[146.3px] flex flex-col items-start justify-start pt-[3.7999999999999545px] px-0 pb-0 box-border">
-            <div className="w-[115.7px] flex-1 flex flex-col items-start justify-start py-0 pr-5 pl-0 box-border gap-[52.39999999999998px]">
-              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-[1.2000000000000457px]">
-                <div className="flex-1 flex flex-col items-end justify-start gap-[34.40000000000009px]">
-                  <div className="h-[10.3px] flex flex-row items-start justify-end py-0 pr-[1.1000000000000227px] pl-px box-border">
+          <div className="h-[216.2px] w-[146.3px] flex flex-col items-start justify-start pt-[3.8px] px-0 pb-0 box-border">
+            <div className="w-[115.7px] flex-1 flex flex-col items-start justify-start py-0 pr-5 pl-0 box-border gap-[52.4px]">
+              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-[1.2px]">
+                <div className="flex-1 flex flex-col items-end justify-start gap-[34.4px]">
+                  <div className="h-[10.3px] flex flex-row items-start justify-end py-0 pr-[1.1px] pl-px box-border">
                   </div>
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[30.69999999999999px] shrink-0 [debug_commit:f6aba90]">
-                    <div className="self-stretch h-[14.5px] flex flex-row items-start justify-start gap-[10.600000000000025px]">
+                  <div className="self-stretch flex flex-col items-start justify-start gap-[30.7px] shrink-0 [debug_commit:f6aba90]">
+                    <div className="self-stretch h-[14.5px] flex flex-row items-start justify-start gap-[10.6px]">
                       <img
                         className="h-[12.9px] w-[16.3px] relative shrink-0 [debug_commit:f6aba90] z-[4]"
                         alt=""
                         src="/vector-36.svg"
                       />
-                      <div className="h-[14.5px] flex-1 flex flex-col items-start justify-start pt-[1.2999999999999543px] px-0 pb-0 box-border">
+                      <div className="h-[14.5px] flex-1 flex flex-col items-start justify-start pt-[1.2px] px-0 pb-0 box-border">
                         <img
                           className="self-stretch h-[13.2px] relative max-w-full overflow-hidden shrink-0 [debug_commit:f6aba90] z-[4]"
                           alt=""
@@ -261,14 +246,14 @@ const Content: FunctionComponent = () => {
                         />
                       </div>
                     </div>
-                    <div className="w-[77.9px] flex flex-row items-start justify-start py-0 pr-0.5 pl-[1.8999999999999773px] box-border">
-                      <div className="h-[15.3px] flex-1 flex flex-row items-start justify-start gap-[13.799999999999956px]">
+                    <div className="w-[77.9px] flex flex-row items-start justify-start py-0 pr-0.5 pl-[1.9px] box-border">
+                      <div className="h-[15.3px] flex-1 flex flex-row items-start justify-start gap-[13.8px]">
                         <img
                           className="h-[15.3px] w-[11.2px] relative min-h-[15px] z-[5]"
                           alt=""
                           src="/vector-38.svg"
                         />
-                        <div className="h-[12.4px] flex-1 flex flex-col items-start justify-start pt-[1.6000000000000227px] px-0 pb-0 box-border">
+                        <div className="h-[12.4px] flex-1 flex flex-col items-start justify-start pt-[1.6px] px-0 pb-0 box-border">
                           <img
                             className="self-stretch h-[10.8px] relative max-w-full overflow-hidden shrink-0 z-[5]"
                             alt=""
@@ -299,7 +284,7 @@ const Content: FunctionComponent = () => {
               />
             </div>
           </div>
-          <div className="h-[149.5px] flex flex-col items-start justify-start pt-[52.5px] pb-0 pr-[22.799999999999955px] pl-0 box-border">
+          <div className="h-[149.5px] flex flex-col items-start justify-start pt-[52.5px] pb-0 pr-[22.8px] pl-0 box-border">
             <div className="flex-1 flex flex-col items-start justify-start gap-[41px]">
               <img
                 className="w-2.5 h-[5px] relative z-[4]"
@@ -475,8 +460,8 @@ const Content: FunctionComponent = () => {
           alt=""
           src="/vector-58.svg"
         />
-        <section className="absolute top-[511.5px] left-[22.5px] w-[1361.5px] flex flex-row flex-wrap items-start justify-start gap-[64.30000000000007px] max-w-full">
-          <div className="w-[112.4px] flex flex-col items-start justify-start gap-[31.40000000000003px]">
+        <section className="absolute top-[511.5px] left-[22.5px] w-[1361.5px] flex flex-row flex-wrap items-start justify-start gap-[64.3px] max-w-full">
+          <div className="w-[112.4px] flex flex-col items-start justify-start gap-[31.4px]">
             <div className="h-[15.4px] flex flex-row items-end justify-start py-0 pr-1.5 pl-0 box-border gap-[11.5px]">
               <img
                 className="h-[15px] w-[15px] relative z-[3]"
@@ -520,7 +505,7 @@ const Content: FunctionComponent = () => {
               </div>
               <div className="flex-1 flex flex-col items-start justify-start pt-[29.5px] px-0 pb-0 box-border min-w-[712px] max-w-full mq800:min-w-full">
                 <div className="self-stretch flex flex-row items-start justify-start gap-[31px] max-w-full mq1125:flex-wrap">
-                  <div className="flex flex-col items-start justify-start pt-[5.199999999999989px] px-0 pb-0">
+                  <div className="flex flex-col items-start justify-start pt-[5.2px] px-0 pb-0">
                     <div className="h-[189px] flex flex-col items-start justify-start pt-0 px-0 pb-[60px] box-border gap-[51px]">
                       <img
                         className="w-[21.3px] h-[9px] relative z-[1]"

@@ -74,3 +74,16 @@
   .sidebar-heading:hover{
     font-weight: bold;
   }
+  .premium-stats{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .premium-stats-desc{
+    color: white;
+    font-size: 11px;
+  }
+  .background-premium-stats{
+    background: black;
+    border-radius: 16px;
+  }
