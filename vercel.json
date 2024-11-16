@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "a03be36c9c57f4ebfaf744c26e9b8d89-1003014400.ap-south-1.elb.amazonaws.com",
+      "permanent": true
+    }
+  ]
+}
